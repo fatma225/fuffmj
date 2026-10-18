@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Recipes | TastyBite</title>
+  <link rel="stylesheet" href=" style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <span class="brand-logo">TB</span>
+        <span>TastyBite</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation"
+        aria-expanded="false">☰</button>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="index.html#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <p class="eyebrow">Find your next favorite meal</p>
+        <h1>Explore Our Recipes</h1>
+        <p>Search, filter, and discover something delicious.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <form id="search-form" class="filter-panel">
+          <div class="search-field">
+            <label for="search-input">Search recipes</label>
+            <input
+              type="search"
+              id="search-input"
+              placeholder="Try chicken, pasta, soup..."
+              autocomplete="off">
+          </div>
+
+          <div class="filter-field">
+            <label for="cuisine-filter">Cuisine</label>
+            <select id="cuisine-filter">
+              <option value="">All cuisines</option>
+            </select>
+          </div>
+
+          <div class="filter-field">
+            <label for="meal-filter">Meal type</label>
+            <select id="meal-filter">
+              <option value="">All meal types</option>
+            </select>
+          </div>
+
+          <div class="filter-field">
+            <label for="sort-filter">Sort by</label>
+            <select id="sort-filter">
+              <option value="default">Default</option>
+              <option value="rating-desc">Highest rated</option>
+              <option value="name-asc">Name: A to Z</option>
+              <option value="time-asc">Quickest first</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary search-button">
+            Search
+          </button>
+
+          <button type="button" id="reset-filters" class="btn btn-secondary">
+            Clear Filters
+          </button>
+        </form>
+
+        <div class="results-heading">
+          <h2>All Recipes</h2>
+          <p id="results-count">Loading recipes...</p>
+        </div>
+
+        <div id="recipes-list" class="recipe-grid">
+          <p class="status-message">Loading recipes...</p>
+        </div>
+
+        <div id="pagination" class="pagination"></div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a href="index.html" class="brand footer-brand">
+        <span class="brand-logo">TB</span>
+        <span>TastyBite</span>
+      </a>
+      <p>A beginner-friendly restaurant recipe website powered by DummyJSON.</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="index.html#about">About</a>
+      </nav>
+      <p class="copyright">© 2026 TastyBite. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
